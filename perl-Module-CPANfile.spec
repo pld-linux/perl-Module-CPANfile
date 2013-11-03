@@ -22,6 +22,8 @@ BuildRequires:	perl(ExtUtils::MakeMaker) >= 6.30
 BuildRequires:	perl(base)
 BuildRequires:	perl(strict)
 BuildRequires:	perl(warnings)
+BuildRequires:	perl-Encode
+BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl(Exporter)
 BuildRequires:	perl(POSIX)
