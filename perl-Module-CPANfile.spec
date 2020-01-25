@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 
-%include	/usr/lib/rpm/macros.perl
 Summary:	Parse cpanfile
 Name:		perl-Module-CPANfile
 Version:	1.0001
