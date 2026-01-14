@@ -5,7 +5,7 @@
 Summary:	Parse cpanfile
 Name:		perl-Module-CPANfile
 Version:	1.0001
-Release:	1
+Release:	2
 License:	GPL+ or Artistic
 Group:		Development/Libraries
 Source0:	http://www.cpan.org/authors/id/M/MI/MIYAGAWA/Module-CPANfile-%{version}.tar.gz
