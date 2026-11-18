@@ -4,12 +4,12 @@
 
 Summary:	Parse cpanfile
 Name:		perl-Module-CPANfile
-Version:	1.0001
-Release:	2
+Version:	1.1004
+Release:	1
 License:	GPL+ or Artistic
 Group:		Development/Libraries
-Source0:	http://www.cpan.org/authors/id/M/MI/MIYAGAWA/Module-CPANfile-%{version}.tar.gz
-# Source0-md5:	d1fa25121f0409182a21b2ef89ab58e0
+Source0:	https://www.cpan.org/authors/id/M/MI/MIYAGAWA/Module-CPANfile-%{version}.tar.gz
+# Source0-md5:	0fa318205356453fb9ab7bdb7731cf97
 URL:		http://search.cpan.org/dist/Module-CPANfile/
 BuildRequires:	perl(CPAN::Meta) >= 2.12091
 BuildRequires:	perl(CPAN::Meta::Feature) >= 2.12091
@@ -25,6 +25,7 @@ BuildRequires:	perl-Encode
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl(Exporter)
+BuildRequires:	perl(File::pushd)
 BuildRequires:	perl(POSIX)
 BuildRequires:	perl(Test::More) >= 0.88
 %endif
@@ -61,7 +62,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes LICENSE README
+%attr(755,root,root) %{_bindir}/cpanfile-dump
 %attr(755,root,root) %{_bindir}/mymeta-cpanfile
+%{_mandir}/man1/cpanfile-dump*
 %{_mandir}/man1/mymeta-cpanfile*
 %{_mandir}/man3/Module::CPANfile.3pm*
 %{_mandir}/man3/cpanfile-faq.3pm*
